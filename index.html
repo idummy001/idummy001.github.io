@@ -1,0 +1,338 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="/cdn-cgi/apps/head/B7pPwmNnQ7h0NIzqYTyR_i3M9JI.js"></script><link rel="shortcut icon" href="./sb.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>ZJQ劲爆灵堂！WOW!</title>
+    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.0/dist/APlayer.min.css">
+    <style>
+        body {
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            background: url(/bg.png);
+        }
+
+        center {
+            background: #fff;
+            max-width: 600px;
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+        b {
+            margin: 0 1.5px;
+        }
+
+        @keyframes rotate {
+            from {
+                -webkit-transform: rotate(0deg)
+            }
+
+            to {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-1 {
+            from {
+                -webkit-transform: rotate(360deg)
+            }
+
+            to {
+                -webkit-transform: rotate(0deg)
+            }
+        }
+
+        @-webkit-keyframes shake-it {
+            0% {
+                text-shadow: 0 0 rgba(0, 255, 255, .5), 0 0 rgba(255, 0, 0, .5);
+            }
+
+            25% {
+                text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
+            }
+
+            50% {
+                text-shadow: -5px 0 rgba(0, 255, 255, .5), 3px 0 rgba(255, 0, 0, .5);
+            }
+
+            100% {
+                text-shadow: 3px 0 rgba(0, 255, 255, .5), 5px 0 rgba(255, 0, 0, .5);
+            }
+        }
+
+        @keyframes shake-it {
+            0% {
+                text-shadow: 0 0 rgba(0, 255, 255, .5), 0 0 rgba(255, 0, 0, .5);
+            }
+
+            25% {
+                text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
+            }
+
+            50% {
+                text-shadow: -5px 0 rgba(0, 255, 255, .5), 3px 0 rgba(255, 0, 0, .5);
+            }
+
+            100% {
+                text-shadow: 3px 0 rgba(0, 255, 255, .5), 5px 0 rgba(255, 0, 0, .5);
+            }
+        }
+
+        @-webkit-keyframes shake-sb {
+            0% {
+                text-shadow: 0 0 rgba(0, 60, 255, 0.959), 0 0 rgba(255, 0, 0, 0.281);
+            }
+
+            25% {
+                text-shadow: 1px 0 rgba(255, 136, 0, 0.973), -1px 0 rgb(0, 255, 64);
+            }
+
+            50% {
+                text-shadow: 2.5px 0 rgba(255, 0, 157, 0.904), -1.5px 0 rgb(0, 255, 242);
+            }
+
+            100% {
+                text-shadow: -1.5px 0 rgba(255, 230, 0, 0.966), -2.5px 0 rgb(229, 255, 0);
+            }
+        }
+
+        @keyframes shake-sb {
+            0% {
+                text-shadow: 0 0 rgba(0, 60, 255, 0.959), 0 0 rgba(255, 0, 0, 0.281);
+            }
+
+            25% {
+                text-shadow: 1px 0 rgba(255, 136, 0, 0.973), -1px 0 rgb(0, 255, 64);
+            }
+
+            50% {
+                text-shadow: 2.5px 0 rgba(255, 0, 157, 0.904), -1.5px 0 rgb(0, 255, 242);
+            }
+
+            100% {
+                text-shadow: -1.5px 0 rgba(255, 230, 0, 0.966), -2.5px 0 rgb(229, 255, 0);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .metatext {
+            padding: 30px;
+            max-width: 300px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .box {
+            display: block;
+            padding: 20px;
+        }
+
+        #sb1 {
+            width: 190.5px;
+            height: 250px;
+            background: url(/sb.jpg);
+            background-size: contain;
+            position: fixed;
+            top: 0;
+            color: #fff;
+            animation: 2.8s linear 0s normal none infinite rotate;
+            -webkit-animation: 2.8s linear 0s normal none infinite rotate;
+        }
+
+        #sb2 {
+            opacity: .8;
+            width: 175px;
+            height: 250px;
+            background: url(/sb2.jpg);
+            background-size: contain;
+            position: fixed;
+            top: 0;
+            color: #fff;
+            animation: 3.7s linear .1s normal none infinite rotate-1;
+            -webkit-animation: 3.7s linear .1s normal none infinite rotate-1;
+        }
+
+        #sb3 {
+            width: 110px;
+            height: 120px;
+            background: url(/sb0.jpg);
+            background-size: contain;
+            position: fixed;
+            top: 0;
+            color: #fff;
+            animation: 2.2s linear 0s normal none infinite rotate-1;
+            -webkit-animation: 2.2s linear 0s normal none infinite rotate-1;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #sb1 {
+                width: 95.25px;
+                height: 125px;
+            }
+
+            #sb2 {
+                width: 87.5px;
+                height: 125px;
+            }
+
+            .metatext {
+                padding: 5px;
+                width: inherit;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="shake-it">
+            <h2> 本站不欢迎ZJQ！如果你是ZJQ，请速速离开！！！ </h2> 
+            <h2>   ZJQ劲爆灵堂！WOW!</h2>
+            <h1>  ZJQ灵堂！</h1>
+            <h4>首次访问，音乐可能不会自动播放，请手动点击下部播放器开始播放以获得最佳观赏体验!!!</h4>
+        </div>
+        <div class="aplayer"
+            data-name="ZJQ Fucker"
+            data-artist="Fuck Yiliu:)"
+            data-url="./music.mp3"
+            data-cover="./music.jpg"
+            data-autoplay="true">
+        </div>
+        <div id="information_box" class="box">
+            <h3 style="margin-top:0">说明</h3>
+            <div style="font-size: 18px">
+                各位朋友们:
+                <br>
+                经过加急制作，ZJQ灵堂已成功上线<b>
+                <br>
+                住址 SB市SB区SB家
+                <br>
+                sfz号码 4202************15
+                <br>
+                特此写了一首小诗来嘲讽ZJQ:
+                <br>
+                ZJQ
+                <br>
+                ZJQ死了，妙哉妙哉
+                <br>
+                ZJQ死了，皆大欢喜
+                <br>
+                ZJQ死了，世界安宁
+                <br>
+                ZJQ死了，嗝屁英容
+                <br>
+                ZJQ死了，希望来临
+                <br>
+                ZJQ 
+                I Fuck You!
+                : )))))))
+                <br>
+            </div>
+            <br>
+            <img src="dao.png" style="max-width: 85%; margin: 0 auto">
+            <br>
+            <hr>
+            <img src="xj.png" style="max-width: 120.0%; margin: 0 -10%">
+            
+        </div>
+    </center>
+    <div class="metatext box">
+        <p>Powered By 114514&rshjlzcn</p>
+        <p>警告！发现最近有ZJQ那边的走狗来恶意GIT网站的代码，并恶意修改。本站再次声明，禁止GIT本站的代码！！！
+        <p>版权所有，翻版必究！！！</p>
+        <p>NoZJQ!</p>
+    </div>
+    <script src="https://unpkg.com/jquery@3.3.1"></script>
+    <script>
+        window.onload = function () {
+            $(function () {
+                var wh = $(window).height();
+                var f = $(document).width();
+                setInterval(function () {
+                    var e = Math.random() * f - 40;
+                    var o = 8 * Math.random();
+                    var fon = 10 + Math.random() * 150;
+                    var l = e - 114 + 514 * Math.random();
+                    var k = 4514 + 8101 * Math.random();
+                    var html = "<div id='sb1'><div>";
+                    $(html).clone().appendTo("body").css({
+                        left: e + "px",
+                        opacity: o,
+                        "font-size": fon,
+                    }).animate({
+                        top: (wh * 2) + "px",
+                        left: l + "1px",
+                        opacity: 1,
+                    }, k, "linear", function () {
+                        $(this).remove()
+                    })
+                }, 514)
+            });
+            $(function () {
+                var wh = $(window).height();
+                var f = $(document).width();
+                setInterval(function () {
+                    var e = Math.random() * f - 150;
+                    var o = 1.6 * Math.random();
+                    var fon = 20 + Math.random() * 30;
+                    var l = e - 40 + 326 * Math.random();
+                    var k = 3114 + 5140 * Math.random();
+                    var html = "<div id='sb2'><div>";
+                    $(html).clone().appendTo("body").css({
+                        left: e + "px",
+                        opacity: o,
+                        "font-size": fon,
+                    }).animate({
+                        top: (wh * 2) + "px",
+                        left: l + ".5px",
+                        opacity: 1,
+                    }, k, "linear", function () {
+                        $(this).remove()
+                    })
+                }, 819)
+            });
+            $(function () {
+                var wh = $(window).height();
+                var f = $(document).width();
+                setInterval(function () {
+                    var e = Math.random() * f - 130;
+                    var o = 1.4 * Math.random();
+                    var fon = 12 + Math.random() * 30;
+                    var l = e - 92 + 356 * Math.random();
+                    var k = 2198 + 5810 * Math.random();
+                    var html = "<div id='sb3'><div>";
+                    $(html).clone().appendTo("body").css({
+                        left: e + "px",
+                        opacity: o,
+                        "font-size": fon,
+                    }).animate({
+                        top: (wh * 2) + "px",
+                        left: l + ".8px",
+                        opacity: 1,
+                    }, k, "linear", function () {
+                        $(this).remove()
+                    })
+                }, 451)
+            });
+            document.getElementById("shake-it").style = "animation: shake-it .35s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);";
+            document.getElementById("shake-sb").style = "animation: shake-sb .5s reverse infinite cubic-bezier(0.82, -0.44, 0.82, 1.14);";
+        }
+        console.info("NO YiLiu!");
+        console.info("Attack!!!");
+        console.info("No LovelyJulius!")
+        console.info("Jasonliu233" )
+        console.info("I Fuck You!")
+        console.info(": )))))))")
+    </script>
+    <script src="https://unpkg.com/aplayer@1.10"></script>
+    <script src="https://unpkg.com/meting@1.2"></script>
+</body>
+
+</html>
